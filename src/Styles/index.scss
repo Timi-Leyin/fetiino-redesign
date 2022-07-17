@@ -1,0 +1,15 @@
+html {
+  scroll-behavior: smooth;
+
+  body {
+    font-family: "Georama", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+      "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  }
+
+}
+
+
+  /** TAILWIND **/
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
