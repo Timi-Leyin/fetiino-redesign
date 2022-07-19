@@ -1,14 +1,61 @@
+@font-face {
+  font-family:'bligra' ;
+  src: url('/src/Assets/fonts/Bligra-Regular.otf');
+  font-weight:400
+}
+
+@font-face {
+  font-family:'gilnger' ;
+  src: url('/src/Assets/fonts/Gilnger-Regular.otf');
+  font-weight:400
+}
+
+
+@font-face {
+  font-family:'chillax' ;
+  src: url('/src/Assets/fonts/chillax/Chillax-Extralight.otf');
+  font-weight:100
+}
+@font-face {
+  font-family:'chillax' ;
+  src: url('/src/Assets/fonts/chillax/Chillax-Light.otf');
+  font-weight:200
+}
+@font-face {
+  font-family:'chillax' ;
+  src: url('/src/Assets/fonts/chillax/Chillax-Medium.otf');
+  font-weight:300
+}
+@font-face {
+  font-family:'chillax' ;
+  src: url('/src/Assets/fonts/chillax/Chillax-Regular.otf');
+  font-weight:400
+}
+@font-face {
+  font-family:'chillax' ;
+  src: url('/src/Assets/fonts/chillax/Chillax-Semibold.otf');
+  font-weight:500
+}
+@font-face {
+  font-family:'chillax' ;
+  src: url('/src/Assets/fonts/chillax/Chillax-Bold.otf');
+  font-weight:600
+}
+
+
+
 html {
   scroll-behavior: smooth;
 
   body {
-    font-family: "Georama", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    font-family: 'chillax', "Georama", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
       "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   }
 
 }
 
 
+  
   /** TAILWIND **/
   @tailwind base;
   @tailwind components;
