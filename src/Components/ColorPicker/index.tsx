@@ -9,32 +9,29 @@ const ColorPicker = () => {
         if(!_ref) return
 
         const picker:any =  iro.ColorPicker('#color-picker',{
-            width:320,
+            width:200,
+            // height:800,
             colors:[color1,color2],
 
             layout:[
              {
                     component:iro.ui.Slider,
                     options:{
-                        height:10,
-                        sliderType:'saturation'
+                        sliderType:'hue',
+
                     }
                 },
              {
                     component:iro.ui.Slider,
                     options:{
-                        height:10,
                         sliderType:'kelvin'
                     }
                 },
                 {
                     component:iro.ui.Box,
                     options:{
-                        boxType:'hue',
-                        // boxHeight:320,
-                        // height:600,
+                        boxHeight:300,
                         borderColor:"#ffffff",
-                        // width:'200px'
                     }
                 }
             ],
