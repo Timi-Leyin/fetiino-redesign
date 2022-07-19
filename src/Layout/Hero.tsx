@@ -3,6 +3,9 @@ import Button from "../Components/Button";
 import { FaBook as ReadIcon, FaLevelDownAlt as GetIcon } from 'react-icons/fa';
 import {Helmet} from 'react-helmet';
 import { Fragment } from "react";
+import ColorPicker from "../Components/ColorPicker";
+// import ColorPicker from 'irojs-react';
+
 
 const Hero = () => {
   return (
@@ -37,7 +40,7 @@ const Hero = () => {
 
 {/* hero visual */}
 <div className="">
-    visual
+    <ColorPicker />
 </div>
 </motion.section>
    </Fragment>
