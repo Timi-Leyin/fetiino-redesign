@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Button from "../Components/Button";
-import { FaBook as ReadIcon, FaLevelDownAlt as GetIcon } from 'react-icons/fa';
+import { FaBook as ReadIcon, FaFigma, FaHeart, FaLevelDownAlt as GetIcon } from 'react-icons/fa';
 import {Helmet} from 'react-helmet';
 import { Fragment } from "react";
 import ColorPicker from "../Components/ColorPicker";
@@ -35,6 +35,13 @@ const Hero = () => {
           <Button className='rounded-full ring-black text-black ring-1 mx-2 flex align-center justify-center dark:ring-white dark:text-white'> <ReadIcon /> <span className="mx-1">Read Article</span> </Button>
       </div>
       {/* tools extension */}
+      <div className="flex my-4 text-sm items-center">
+          <span>Available On</span>
+          <div className="flex mx-3 gap-2">
+              <FaFigma />
+              <FaHeart />
+          </div>
+      </div>
   </div>
 </div>
 
