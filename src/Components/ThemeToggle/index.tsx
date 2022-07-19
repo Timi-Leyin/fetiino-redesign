@@ -14,7 +14,7 @@ const ThemeToggle = () => {
    
   return (
         <button onClick={themeToggleHandler} className='w-[50px] relative h-[30px] rounded-full bg-gray-400 dark:bg-gray-300 transition-colors'>
-        <div className={`transition-colors check w-[25px] h-[25px] text-xs flex justify-center items-center transition-transform rounded-full bg-black text-white dark:bg-white dark:text-black ${state ? 'translate-x-full': ' translate-x-0'}`}>
+        <div className={`check w-[25px] h-[25px] text-xs flex justify-center items-center transition-transform rounded-full bg-black text-white dark:bg-white dark:text-black ${state ? 'translate-x-full': ' translate-x-0'}`}>
             {state ? <DarkIcon />: <LightIcon />}
         </div>
     </button>
