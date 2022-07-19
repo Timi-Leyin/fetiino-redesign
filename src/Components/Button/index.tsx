@@ -1,12 +1,13 @@
-import {ButtonHTMLAttributes, ReactNode, useState} from 'react'
+import {ButtonHTMLAttributes, HTMLAttributes, ReactNode, useState} from 'react'
 
-interface ButtonProps{
-    children?: ReactNode
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
+    children?: ReactNode,
+    className?:any,
 }
 
-const Button = ({children}:ButtonProps,...props:ButtonHTMLAttributes<HTMLElement>[]) => {
+const Button: React.FunctionComponent<ButtonProps> = ({children, ...rest}) => {
   return (
-    <button {...props} className='p-4 transition-all text-xs ring-none'>
+    <button  {...rest} className={`p-4 w-[150px] bg-primary text-white transition-all text-xs ring-none hover:opacity-90 focus:scale-95 ${rest.className}`}>
         {children}
     </button>
   )
