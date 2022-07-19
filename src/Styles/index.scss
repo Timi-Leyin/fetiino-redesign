@@ -60,3 +60,10 @@ html {
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
+
+
+  @layer components{
+    .gradient{
+      @apply bg-gradient-to-r from-purple-400 to-pink-600;
+    }
+  }

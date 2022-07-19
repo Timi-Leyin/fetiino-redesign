@@ -7,7 +7,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
 
 const Button: React.FunctionComponent<ButtonProps> = ({children, ...rest}) => {
   return (
-    <button  {...rest} className={`p-4 w-[150px] bg-primary text-white transition-all text-xs ring-none hover:opacity-90 focus:scale-95 ${rest.className}`}>
+    <button  {...rest} className={`p-4 w-[150px] bg-transparent text-inherit transition-all text-xs ring-none hover:opacity-90 focus:scale-95 ${rest.className}`}>
         {children}
     </button>
   )

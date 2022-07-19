@@ -8,7 +8,7 @@ const Hero = () => {
           {/* heading */}
         <h1 className='text-6xl font-[400]'>
           <span className="block">Create the</span> 
-          <span className="block">sliky <span className='underline decoration-wavy font-[300]'>Gradient</span> </span>
+          <span className="block">sliky <span className='underline decoration-wavy font-[300] text-transparent bg-clip-text gradient'>Gradient</span> </span>
         <span className="block"> Nicely!</span>
         </h1>
         {/* sub heading */}
@@ -17,10 +17,10 @@ const Hero = () => {
         <div className="">
             {/* buttons */}
             <div className="flex gap-2">
-                <Button className="rounded-full flex align-center justify-center">
+                <Button className="rounded-full flex align-center justify-center gradient">
                 <GetIcon /> <span className="mx-1">Get it Now</span> 
                 </Button>
-                <Button className='rounded-full ring-black text-black ring-1 bg-transparent mx-2 flex align-center justify-center dark:ring-white dark:text-white'> <ReadIcon /> <span className="mx-1">Read Article</span> </Button>
+                <Button className='rounded-full ring-black text-black ring-1 mx-2 flex align-center justify-center dark:ring-white dark:text-white'> <ReadIcon /> <span className="mx-1">Read Article</span> </Button>
             </div>
             {/* tools extension */}
         </div>
