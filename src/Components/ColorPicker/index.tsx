@@ -10,9 +10,8 @@ const ColorPicker = () => {
 
         const picker:any =  iro.ColorPicker('#color-picker',{
             width:200,
-            // height:800,
             colors:[color1,color2],
-
+            borderColor:"#fff",
             layout:[
              {
                     component:iro.ui.Slider,
@@ -31,7 +30,6 @@ const ColorPicker = () => {
                     component:iro.ui.Box,
                     options:{
                         boxHeight:300,
-                        borderColor:"#ffffff",
                     }
                 }
             ],
