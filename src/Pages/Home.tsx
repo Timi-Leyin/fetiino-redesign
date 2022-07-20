@@ -9,6 +9,7 @@ import Hero from '../Layout/Hero';
 import Footer from '../Layout/Footer';
 import Typography from '../Layout/Typography';
 import Tools from '../Layout/Tools';
+import Features from '../Layout/Features';
 
 const pageAnimate = {
 
@@ -21,7 +22,7 @@ const Home = () => {
   <Hero />
 <Typography />  
 <Tools />
-
+<Features />
     <Footer />
   
   </motion.main>
