@@ -255,6 +255,19 @@
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.4.tgz#19bf0f5af19149111c40d98bb0cf82119f5d9eeb"
   integrity sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==
 
+"@irojs/iro-core@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@irojs/iro-core/-/iro-core-1.2.1.tgz#ab45cf0899717fae785ef9661b82bb6f78cd3748"
+  integrity sha512-p2OvsBSSmidsDsTSkID6jEyXDF7lcyxPrkh3qBzasBZFpjkYd6kZ3yMWai3MlAaQ3F7li/Et7rSJVV09Fpei+A==
+
+"@jaames/iro@^5.5.1", "@jaames/iro@^5.5.2":
+  version "5.5.2"
+  resolved "https://registry.yarnpkg.com/@jaames/iro/-/iro-5.5.2.tgz#15301c19080b985aede06c5f07867aa20d06e679"
+  integrity sha512-Fbi5U4Vdkw6UsF+R3oMlPONqkvUDMkwzh+mX718gQsDFt3+1r1jvGsrfCbedmXAAy0WsjDHOrefK0BkDk99TQg==
+  dependencies:
+    "@irojs/iro-core" "^1.2.1"
+    preact "^10.0.0"
+
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.1.1.tgz#e5d2e450306a9491e3bd77e323e38d7aff315996"
@@ -331,6 +344,13 @@
   version "18.0.4"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.0.4.tgz#dcbcadb277bcf6c411ceff70069424c57797d375"
   integrity sha512-FgTtbqPOCI3dzZPZoC2T/sx3L34qxy99ITWn4eoSA95qPyXDMH0ALoAqUp49ITniiJFsXUVBtalh/KffMpg21Q==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-helmet@^6.1.5":
+  version "6.1.5"
+  resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-6.1.5.tgz#35f89a6b1646ee2bc342a33a9a6c8777933f9083"
+  integrity sha512-/ICuy7OHZxR0YCAZLNg9r7I9aijWUWvxaPR6uTuyxe8tAj5RL4Sw1+R6NhXUtOsarkGYPmaHdBDvuXh2DIN/uA==
   dependencies:
     "@types/react" "*"
 
@@ -843,6 +863,13 @@ immutable@^4.0.0:
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.1.0.tgz#f795787f0db780183307b9eb2091fcac1f6fafef"
   integrity sha512-oNkuqVTA8jqG1Q6c+UglTOD1xhC1BtjKI7XkCXRkZHrN5m18/XsnUp8Q89GkQO/z+0WjonSvl0FLhDYftp46nQ==
 
+irojs-react@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/irojs-react/-/irojs-react-1.0.4.tgz#916ad0e8d45d352d5fd42b42b5568a737acaaf09"
+  integrity sha512-EfnLUo2g8AgQcDF6qHkfjgchWmEeF8v2axY433XirLcDR0hrlL0xx/d1gmhlRMR/z721psBFBmaHk3qcLFYV3Q==
+  dependencies:
+    "@jaames/iro" "^5.5.1"
+
 is-binary-path@~2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/is-binary-path/-/is-binary-path-2.1.0.tgz#ea1f7f3b80f064236e83470f86c09c254fb45b09"
@@ -1055,6 +1082,11 @@ postcss@*, postcss@^8.4.14:
     nanoid "^3.3.4"
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
+
+preact@^10.0.0:
+  version "10.10.0"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.10.0.tgz#7434750a24b59dae1957d95dc0aa47a4a8e9a180"
+  integrity sha512-fszkg1iJJjq68I4lI8ZsmBiaoQiQHbxf1lNq+72EmC/mZOsFF5zn3k1yv9QGoFgIXzgsdSKtYymLJsrJPoamjQ==
 
 prop-types@^15.7.2:
   version "15.8.1"

@@ -2,9 +2,8 @@ import React from 'react'
 
 const Logo = () => {
   return (
-    <div className='custom_logo text-3xl'>
-        <span className="font-bold">Logo</span>
-        <span className="block font-[300] text-xl -translate-y-2">here</span>
+    <div className='custom_logo text-2xl font-[300]'>
+        <span className="">Fetiino</span>
     </div>
   )
 }
