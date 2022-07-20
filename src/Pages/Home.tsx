@@ -8,6 +8,7 @@ import Header from '../Layout/Header';
 import Hero from '../Layout/Hero';
 import Footer from '../Layout/Footer';
 import Typography from '../Layout/Typography';
+import Tools from '../Layout/Tools';
 
 const pageAnimate = {
 
@@ -19,10 +20,7 @@ const Home = () => {
   <Header />
   <Hero />
 <Typography />  
-
-
-<div className=""></div>
-
+<Tools />
 
     <Footer />
   
