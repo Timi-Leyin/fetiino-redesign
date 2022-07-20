@@ -8,8 +8,8 @@ const Testimonials = () => {
     console.log(RandomTweets)
   return (
     <section className="py-12">
-      <div className="block p-12">
-        <h3 className="text-3xl font-[600] w-[300px]">
+      <div className="block p-6 sm:p-12">
+        <h3 className="text-3xl sm:text-5xl font-[600]">
           What Other Users
           <span className="block">Says</span>
         </h3>

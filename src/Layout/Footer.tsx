@@ -3,17 +3,17 @@ import { FaArrowRight } from 'react-icons/fa';
 import Logo from '../Components/Logo';
 
 const Footer = () => {
-  return (<div className="gradient relative text-white p-12 min-h-[40vh] rounded-t-[20vh]">
+  return (<div className="gradient relative text-white p-12 min-h-[40vh] rounded-t-[50px] sm:rounded-t-[20vh]">
     {/* newsletter */}
-<div className="p-12">
+<div className="sm:p-12">
 <div className="">
   <h2 className="text-3xl font-[500]">
 Join Waitlist
 </h2>
 {/* <small className='text-red-500 translate-y-[-5px] block'>Invalid</small> */}
 </div>
-<div className='flex items-center ring-'>
-<input type="email" className='bg-transparent text-5xl px-3 outline-none text-gray-300 ring-o placeholder:text-gray-300' placeholder='Your@gmail.com' />
+<div className='md:flex items-center'>
+<input type="email" className='bg-transparent text-3xl sm:text-5xl px-3 w-full outline-none text-gray-300 ring-o placeholder:text-gray-300 my-6 block sm:my-0' placeholder='Your@gmail.com' />
 {/* no component button */}
 <button className='bg-black text-white w-16 h-16 p-4  flex items-center justify-center rounded-full rotate-[45deg]'>
 <FaArrowRight />
