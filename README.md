@@ -1,6 +1,22 @@
-# Project Name
+# Fetiino - Redesign
 
-Description about [Project](https://)
+A web app thats creates coll color palettes from images or get inspired by beautiful color schemes.
+ [Fetiino](https://fetiino.netlify.app)
+ ##
+ [Redesigned - Fetiino](https://fetiino-redesign.netlify.app)
+
+
+# Installation
+
+```bash
+    npm install
+```
+
+```bash
+    yarn install
+```
+
+
 
 # Todo
 
@@ -11,21 +27,11 @@ Description about [Project](https://)
 - install postcss tailwindcss autoprefixer ( - )
 - configure tailwindcss ( - )
 - vite 3.0.0 ( - )
+- dark mode ( - )
 - install react-helmet ( )
 - configure eslint ( )
-- remove swiper ( )
-
-# Installation
-
-```bash
-    npm install
-```
-
-or
-
-```bash
-    yarn install
-```
+- remove gsap ()
+- design responsivness ( )
 
 # Front-end Style Guide
 
@@ -40,17 +46,11 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Blue: hsl(223, 87%, 63%)
+- Pink: EB247C
 
 ### Secondary
 
-- Pale Blue: hsl(223, 100%, 88%)
-- Light Red: hsl(354, 100%, 66%)
-
-### Neutral
-
 - Gray: hsl(0, 0%, 59%)
-- Very Dark Blue: hsl(209, 33%, 12%)
 
 ## Typography
 
@@ -60,8 +60,8 @@ The designs were created to the following widths:
 
 ### Fonts
 
-- Family: [Georama](https://fonts.google.com/specimen/Georama)
-- Weights: 300, 600, 700
+- Family: [Chillax](/src/Assets/fonts/chillax/)
+- Weights: 200, 300,400,500. 600, 700
 
 ## Icons
 
@@ -69,11 +69,10 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 
 - [Font Awesome](https://fontawesome.com)
 - [React-icons](https://react-icons.io)
-- [Ionicons](https://ionicons.com)
 
 ### Built with
 
-- Locomotive Scroll
+- framer-motion
 - Tailwindcss
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
@@ -82,9 +81,9 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Timi-Leyin](https://timileyin.netlify.app)
+- Twitter - [@originalTimi](https://www.twitter.com/originalTimi)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+ - 
