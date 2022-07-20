@@ -1,6 +1,6 @@
 # Fetiino - Redesign
 
-A web app thats creates coll color palettes from images or get inspired by beautiful color schemes.
+A web app thats creates cool color palettes from images or get inspired by beautiful color schemes.
  [Fetiino](https://fetiino.netlify.app)
  ##
  [Redesigned - Fetiino](https://fetiino-redesign.netlify.app)
