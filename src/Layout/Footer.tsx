@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import Logo from '../Components/Logo';
 
 const Footer = () => {
-  return (<div className="gradient relative p-12 min-h-[40vh] rounded-t-[20vh]">
+  return (<div className="gradient relative text-white p-12 min-h-[40vh] rounded-t-[20vh]">
     {/* newsletter */}
 <div className="p-12">
 <h2 className="text-3xl font-[500]">Our Newsletter</h2>

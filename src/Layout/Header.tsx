@@ -11,7 +11,7 @@ const Header = () => {
         <Logo />
        <div className='flex items-center gap-1'>
        <NavLinks />
-        <Button className='rounded-full mx-2 p-2 w-[100px] gradient'>Try it</Button>
+        <Button className='rounded-full mx-2 p-2 w-[80px] gradient'><span className="text-white">Try it</span></Button>
        <ThemeToggle />
        </div>
     </motion.header>

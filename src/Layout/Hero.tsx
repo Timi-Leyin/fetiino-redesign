@@ -39,7 +39,7 @@ const Hero = () => {
       {/* buttons */}
       <div className="flex gap-2">
           <Button className="rounded-full flex align-center justify-center gradient">
-          <GetIcon /> <span className="mx-1">Get it Now</span> 
+          <GetIcon className='text-white' /> <span className="mx-1 text-white">Get it Now</span> 
           </Button>
           <Button className='rounded-full ring-black text-black ring-1 mx-2 flex align-center justify-center dark:ring-white dark:text-white'> <ReadIcon /> <span className="mx-1">Read Article</span> </Button>
       </div>
