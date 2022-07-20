@@ -5,6 +5,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import _404 from "./Pages/_404";
 import Home from "./Pages/Home";
 import Preloader from "./Components/Preloader";
+import 'locomotive-scroll/dist/locomotive-scroll.min.css'
 
 const App = () => {
   const location= useLocation()
