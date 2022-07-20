@@ -23,7 +23,7 @@ const Hero = () => {
            <title>Fetiino - Home</title>
        </Helmet>
 
-       <motion.section id="hero" className='pt-[15vh] sm:pt-[20vh] flex  justify-around  relative flex-col text-center md:text-left md:flex-row'>
+       <motion.section id="hero" className='pt-[80px] sm:pt-[150px]  flex  justify-around  relative flex-col text-center md:text-left md:flex-row'>
 
 <motion.div className="" key='hero-info' variants={animation} initial={'initial'} whileInView={'active'}>
     {/* heading */}
