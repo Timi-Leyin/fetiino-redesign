@@ -17,7 +17,7 @@ const Tool = ({name, no, to}:ToolProps) => {
   </div>
  <a href={to}>
     <Button className="">
-    <span className="bg-black w-16 block rotate-[-45deg] flex-center text-white rounded-full h-16">
+    <span className="bg-black w-16 block rotate-[-45deg] flex-center text-white rounded-full h-16  dark:bg-white dark:text-black">
     <FaArrowRight /> 
     </span>
     </Button>
