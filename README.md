@@ -28,9 +28,12 @@ A web app thats creates cool color palettes from images or get inspired by beaut
 - configure tailwindcss ( - )
 - vite 3.0.0 ( - )
 - dark mode ( - )
-- install react-helmet ( )
+- auto animate gradients & color wheel ( )
+- install react-helmet ( - )
+- smooth scroll ( )
 - configure eslint ( )
 - remove gsap ()
+- add nore tweets ( )
 - design responsivness ( )
 
 # Front-end Style Guide
