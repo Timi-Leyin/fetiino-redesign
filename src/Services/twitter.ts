@@ -1,16 +1,16 @@
 export default [
     {
-        username:'xing_xo',
+        username:'originaltimi',
+        displayName:'CSS Wizard',
+        comment:'Another day to become word class'
+    },
+     {
+        username:'xing0x',
         displayName:'Akinkumi Io',
-        comment:'Cheers to the HTML Developer!'
+        comment:'hehe, Proud of Myself...'
     },
     {
-        username:'CSS Wizard',
-        displayName:'originaltimi',
-        comment:'100!!'
-    },
-    {
-        username:'always Apear',
+        username:'alwaysappear',
         displayName:'Always Appear',
         comment:'Amazing Tool bruvvv'
     },
