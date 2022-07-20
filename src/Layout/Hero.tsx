@@ -6,6 +6,15 @@ import { Fragment } from "react";
 import ColorPicker from "../Components/ColorPicker";
 // import ColorPicker from 'irojs-react';
 
+const animation={
+    initial:{
+        opacity:0
+    },
+    active:{
+        opacity:1,
+        transition:{staggerChildren:0.9}
+    }
+}
 
 const Hero = () => {
   return (
@@ -16,7 +25,7 @@ const Hero = () => {
 
        <motion.section id="hero" className='flex min-h-screen justify-around items-center relative'>
 
-<div className="">
+<motion.div className="" key='hero-info' variants={animation} initial={'initial'} whileInView={'active'}>
     {/* heading */}
   <h1 className='text-6xl font-[400]'>
     <span className="block">Create the</span> 
@@ -43,7 +52,7 @@ const Hero = () => {
           </div>
       </div>
   </div>
-</div>
+</motion.div>
 
 {/* hero visual */}
 <div className="">

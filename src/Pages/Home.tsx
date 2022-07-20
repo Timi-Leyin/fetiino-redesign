@@ -19,6 +19,11 @@ const Home = () => {
   <Header />
   <Hero />
 <Typography />  
+
+
+<div className=""></div>
+
+
     <Footer />
   
   </motion.main>
