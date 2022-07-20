@@ -30,10 +30,10 @@ A web app thats creates cool color palettes from images or get inspired by beaut
 - dark mode ( - )
 - auto animate gradients & color wheel ( )
 - install react-helmet ( - )
-- smooth scroll ( )
+- smooth scroll ( - )
 - configure eslint ( )
 - remove gsap ()
-- add nore tweets ( )
+- add more tweets ( )
 - design responsivness ( )
 
 # Front-end Style Guide

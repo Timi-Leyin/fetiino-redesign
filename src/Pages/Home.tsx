@@ -10,14 +10,12 @@ import Typography from "../Layout/Typography";
 import Tools from "../Layout/Tools";
 import Features from "../Layout/Features";
 import Testimonials from "../Layout/Testimonials";
-import { LocomotiveScrollProvider } from "react-locomotive-scroll";
-import { useRef } from "react";
+import { LocomotiveScrollProvider,useLocomotiveScroll } from "react-locomotive-scroll";
+import { useEffect, useRef } from "react";
 import scrollOptions from '../Config/scroll'
 
-
-
 const Home = () => {
-  const containerRef=useRef(null)
+  const containerRef=useRef(null);
   return (
    <LocomotiveScrollProvider watch={[]} options={scrollOptions} containerRef={containerRef}>
       <motion.main key="home" data-scroll-container ref={containerRef} id="home">

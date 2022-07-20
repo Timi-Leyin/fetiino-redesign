@@ -6,9 +6,18 @@ const scroll:LocomotiveScrollOptions={
     inertial: 0.8,
     mobile: {
       breakpoint: 0,
+    smooth:true,
+
+    },
+    smartphone:{
+      breakpoint: 0,
+      smooth:true,
+  
     },
     tablet: {
       breakpoint: 0,
+    smooth:true,
+
     },
   }
 
