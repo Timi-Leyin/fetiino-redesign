@@ -27,7 +27,7 @@ const Hero = () => {
 
 <motion.div className="" key='hero-info' variants={animation} initial={'initial'} whileInView={'active'}>
     {/* heading */}
-  <h1 className='text-3xl font-[400] py-1 sm:text-5xl md:text-6xl'>
+  <h1 className='text-[2.6rem] font-[400] py-1 sm:text-5xl md:text-6xl'>
     <span className="block">Create the</span> 
     <span className="block">sliky <span className='underline decoration-wavy font-[300] text-transparent bg-clip-text gradient'>Gradient</span> </span>
   <span className="block"> Nicely!</span>
