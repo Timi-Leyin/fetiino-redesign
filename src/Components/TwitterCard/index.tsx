@@ -10,7 +10,7 @@ comment:string,
 
 const TwitterCard = ({username,displayName,comment}:TwitterProps) => {
   return (
-    <div className='w-[400px] m-4 bg-gray-900 text-white min-h-[100px] rounded-2xl'>
+    <div className='w-[400px] m-4 flex-shrink-0 bg-gray-900 text-white min-h-[100px] rounded-2xl'>
         <div className="p-6 ">
         <div className="flex justify-between px-1 item-center">
             <div className="">
