@@ -9,10 +9,10 @@ const Testimonials = () => {
   return (
     <section className="py-12">
       <div className="block p-6 sm:p-12">
-        <h3 className="text-3xl sm:text-5xl font-[600]">
+        <motion.h3 initial={{opacity:0,x:-200}} transition={{delay:.3}} whileInView={{opacity:1,x:0}} className="text-3xl sm:text-5xl font-[600]">
           What Other Users
           <span className="block">Says</span>
-        </h3>
+        </motion.h3>
       </div>
     <div className="overflow-hidden select-none pointer-events-none">
     <motion.div  initial={{x:'-20%'}} animate={{x:'-100%'}} transition={{duration:15,repeat:Infinity,type:'tween',repeatType:'mirror'}} className="flex gap-2">

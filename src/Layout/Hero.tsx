@@ -8,12 +8,18 @@ import ColorPicker from "../Components/ColorPicker";
 
 const animation={
     initial:{
-        opacity:0
+        opacity:0,
+        transition:{when:'afterChildren'}
     },
     active:{
         opacity:1,
-        transition:{staggerChildren:0.9}
+        
+     transition:{staggerChildren:.08,when:'beforeChildren'}
     }
+}
+const item ={
+initial:{opacity:0,y:-30},
+active:{opacity:1,y:0},
 }
 
 const Hero = () => {
@@ -23,19 +29,19 @@ const Hero = () => {
            <title>Fetiino - Home</title>
        </Helmet>
 
-       <motion.section id="hero" className='pt-[80px] sm:pt-[150px]  flex  justify-around  relative flex-col text-center md:text-left md:flex-row'>
+       <motion.section id="hero"  variants={animation} initial={'initial'}  animate={'active'} className='pt-[80px] sm:pt-[150px]  flex  justify-around  relative flex-col text-center md:text-left md:flex-row'>
 
-<motion.div className="" key='hero-info' variants={animation} initial={'initial'} whileInView={'active'}>
+<motion.div className="" key='hero-info'>
     {/* heading */}
-  <h1 className='text-[2.6rem] font-[400] py-1 sm:text-5xl md:text-6xl'>
-    <span className="block">Create the</span> 
-    <span className="block">sliky <span className='underline decoration-wavy font-[300] text-transparent bg-clip-text gradient'>Gradient</span> </span>
-  <span className="block"> Nicely!</span>
-  </h1>
+  <motion.h1  className='text-[2.6rem] font-[400] py-1 sm:text-5xl md:text-6xl'>
+    <motion.span  variants={item} className="block">Create the</motion.span> 
+    <motion.span  variants={item} className="block">sliky <span className='underline decoration-wavy font-[300] text-transparent bg-clip-text gradient'>Gradient</span> </motion.span>
+  <motion.span variants={item}  className="block"> Nicely!</motion.span>
+  </motion.h1>
   {/* sub heading */}
-  <p className='max-w-[400px] mx-auto md:text-sm text-xs my-3 px-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos corrupti numquam quasi necessitatibus.</p>
+  <motion.p  variants={item} className='max-w-[400px] mx-auto md:text-sm text-xs my-3 px-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos corrupti numquam quasi necessitatibus.</motion.p>
   {/* cta */}
-  <div className="">
+  <motion.div  variants={item} className="">
       {/* buttons */}
       <div className="sm:flex sm:w-[300px] sm:mx-auto md:mx-0 gap-2 justify-unset">
           <Button className=" my-4 mx-auto md:mx-0 rounded-full flex align-center justify-center gradient">
@@ -51,13 +57,13 @@ const Hero = () => {
               <FaHeart />
           </div>
       </div>
-  </div>
+  </motion.div>
 </motion.div>
 
 {/* hero visual */}
-<div className="">
+<motion.div className="" variants={item}>
     <ColorPicker />
-</div>
+</motion.div>
 </motion.section>
    </Fragment>
   );

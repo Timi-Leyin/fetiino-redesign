@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import Button from '../Button'
-
+import {motion} from 'framer-motion'
 interface ToolProps{
   name:string,
   no:string | number,
@@ -10,19 +10,19 @@ interface ToolProps{
 const Tool = ({name, no, to}:ToolProps) => {
   return (
     
-<div className="flex gap-5 my-4 mx-auto items-center  p-3 justify-between  md:w-[80vw] ">
+<motion.div key={'tools'} className="flex gap-5 my-4 mx-auto items-center  p-3 justify-between  md:w-[80vw] ">
   <div className="text-2xl md:text-5xl gap-1 flex-center">
-    <span className='text-xl'>{no}</span>
-    <span className="mx-3">{name}</span>
+    <motion.span className='text-xl' initial={{opacity:0, y:20}} transition={{delay:.3}} whileInView={{opacity:1,y:0}}>{no}</motion.span>
+    <motion.span className="mx-3" initial={{opacity:0, y:-20}} transition={{delay:.3}} whileInView={{opacity:1,y:0}}>{name}</motion.span>
   </div>
- <a href={to}>
+ <motion.a href={to} initial={{opacity:0, x:-20}} whileInView={{opacity:1,x:0}}>
     <Button className="">
     <span className="bg-black ml-auto h-10 w-10 md:w-16 block rotate-[-45deg] flex-center text-white rounded-full md:h-16  dark:bg-white dark:text-black">
     <FaArrowRight /> 
     </span>
     </Button>
- </a>
-</div>
+ </motion.a>
+</motion.div>
 
   )
 }
