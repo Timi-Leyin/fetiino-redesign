@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Button from "../Components/Button";
 import { FaBook as ReadIcon, FaFigma, FaHeart, FaLevelDownAlt as GetIcon } from 'react-icons/fa';
 import {Helmet} from 'react-helmet';
+import GradientBlur  from '../Components/GradientBlur'
 import { Fragment } from "react";
 import ColorPicker from "../Components/ColorPicker";
 // import ColorPicker from 'irojs-react';
@@ -25,6 +26,7 @@ active:{opacity:1,y:0},
 const Hero = () => {
   return (
    <Fragment>
+    <GradientBlur />
        <Helmet>
            <title>Fetiino - Home</title>
        </Helmet>
