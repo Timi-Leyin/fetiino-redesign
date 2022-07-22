@@ -1,14 +1,14 @@
-@font-face {
-  font-family:'bligra' ;
-  src: url('/src/Assets/fonts/Bligra-Regular.otf');
-  font-weight:400
-}
+// @font-face {
+//   font-family:'bligra' ;
+//   src: url('/src/Assets/fonts/Bligra-Regular.otf');
+//   font-weight:400
+// }
 
-@font-face {
-  font-family:'gilnger' ;
-  src: url('/src/Assets/fonts/Gilnger-Regular.otf');
-  font-weight:400
-}
+// @font-face {
+//   font-family:'gilnger' ;
+//   src: url('/src/Assets/fonts/Gilnger-Regular.otf');
+//   font-weight:400
+// }
 
 
 @font-face {
@@ -55,6 +55,11 @@ html {
 }
 
 
+::-webkit-scrollbar{
+  appearance: none;
+  height:0;
+  width:0;
+}
   
   /** TAILWIND **/
   @tailwind base;
