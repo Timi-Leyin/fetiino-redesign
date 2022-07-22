@@ -3,7 +3,7 @@ import Button from "../Components/Button";
 import { FaBook as ReadIcon, FaFigma, FaHeart, FaLevelDownAlt as GetIcon } from 'react-icons/fa';
 import {Helmet} from 'react-helmet';
 import GradientBlur  from '../Components/GradientBlur'
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 import ColorPicker from "../Components/ColorPicker";
 // import ColorPicker from 'irojs-react';
 
@@ -24,13 +24,10 @@ active:{opacity:1,y:0},
 }
 
 const Hero = () => {
+  
   return (
    <Fragment>
     <GradientBlur />
-       <Helmet>
-           <title>Fetiino - Home</title>
-       </Helmet>
-
        <motion.section id="hero"  variants={animation} initial={'initial'}  animate={'active'} className='pt-[80px] sm:pt-[150px]  flex  justify-around  relative flex-col text-center md:text-left md:flex-row'>
 
 <motion.div className="" key='hero-info'>
