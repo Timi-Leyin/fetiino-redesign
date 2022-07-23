@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaTwitter } from 'react-icons/fa'
+import { MdVerified} from 'react-icons/md'
 
 
 interface TwitterProps{
@@ -15,7 +16,7 @@ const TwitterCard = ({username,displayName,comment}:TwitterProps) => {
         <div className="flex justify-between px-1 item-center">
             <div className="">
             <h4 className='text-sm font-bold'>{displayName}</h4>
-            <h6 className='text-xs opacity-80'>@{username}</h6>
+            <h6 className='text-xs opacity-80 flex items-center gap-1'>@{username}{username == 'xing0x' && <MdVerified className='text-blue-500' />}</h6>
             </div>
 
             <div className="text-2xl text-blue-500">

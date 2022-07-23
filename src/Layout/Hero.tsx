@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Button from "../Components/Button";
-import { FaBook as ReadIcon, FaFigma, FaHeart, FaLevelDownAlt as GetIcon } from 'react-icons/fa';
+import { FaBook as ReadIcon, FaGithub, FaStar, FaLevelDownAlt as GetIcon } from 'react-icons/fa';
 import {Helmet} from 'react-helmet';
 import GradientBlur  from '../Components/GradientBlur'
 import { Fragment, useEffect, useState } from "react";
@@ -53,13 +53,16 @@ const Hero = () => {
           </a>
       </div>
       {/* tools extension */}
+      <a href='https://github.com/bossoncode/Fetiino'>
       <div className="flex my-4 justify-center md:justify-start text-sm items-center ">
-          <span>Available On</span>
+          <span>Contribute on</span>
           <div className="flex mx-3 gap-2">
-              <FaFigma />
-              <FaHeart />
+              <FaGithub />
+              <FaStar />
           </div>
       </div>
+
+      </a>
   </motion.div>
 </motion.div>
 
