@@ -23,7 +23,7 @@ const Testimonials = () => {
               ))
           }
       </motion.div>
-    <motion.div  initial={{x:'-50%'}} animate={{x:'0%'}} transition={{duration:20,repeat:Infinity,type:'tween',repeatType:'mirror'}} className="flex gap-2">
+    <motion.div  initial={{x:'-100%'}} animate={{x:'0%'}} transition={{duration:20,repeat:Infinity,type:'tween',repeatType:'mirror'}} className="flex gap-2">
           {
               RandomTweets.map((tweet,i)=>(
                 <TwitterCard key={i} username={tweet.username} displayName={tweet.displayName}
