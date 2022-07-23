@@ -34,6 +34,7 @@ const Home = () => {
         containerRef={containerRef}
       >
         <motion.main
+        exit={{opacity:0}}
           key="home"
           data-scroll-container
           ref={containerRef}

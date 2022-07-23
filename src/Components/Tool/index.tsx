@@ -15,7 +15,7 @@ const Tool = ({name, no, to}:ToolProps) => {
     <motion.span className='text-xl' initial={{opacity:0, y:20}} transition={{delay:.3}} whileInView={{opacity:1,y:0}}>{no}</motion.span>
     <motion.span className="mx-3" initial={{opacity:0, y:-20}} transition={{delay:.3}} whileInView={{opacity:1,y:0}}>{name}</motion.span>
   </div>
- <motion.a href={to} initial={{opacity:0, x:-20}} whileInView={{opacity:1,x:0}}>
+ <motion.a href={to} initial={{opacity:0, x:-20}} whileInView={{opacity:1,x:0}} target="_blank">
     <Button className="">
     <span className="bg-black ml-auto h-10 w-10 md:w-16 block rotate-[-45deg] flex-center text-white rounded-full md:h-16  dark:bg-white dark:text-black">
     <FaArrowRight /> 

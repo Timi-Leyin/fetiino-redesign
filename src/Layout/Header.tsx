@@ -11,7 +11,9 @@ const Header = () => {
         <Logo />
        <div className='flex items-center gap-1'>
        <NavLinks />
-        <Button className='rounded-full mx-2 p-2 w-[80px] gradient'><span className="text-white">Try it</span></Button>
+       <a href='https://fetiino.netlify.app' target='_blank'>
+       <Button className='rounded-full mx-2 p-2 w-[8 0px] gradient'><span className="text-white">Try it</span></Button>
+       </a>
        <ThemeToggle />
        </div>
     </motion.header>

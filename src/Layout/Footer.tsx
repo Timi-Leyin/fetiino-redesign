@@ -5,7 +5,7 @@ import Logo from '../Components/Logo';
 const Footer = () => {
   return (<div className="gradient relative text-white p-12 h-[300px] md:h-[400px] rounded-t-[40px]">
     {/* newsletter */}
-<div className="sm:p-12">
+<div className="sm:p-12" id="newsletter">
 <div className="">
   <h2 className="text-3xl font-[500]">
 Join Waitlist

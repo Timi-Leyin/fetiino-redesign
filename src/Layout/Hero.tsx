@@ -33,20 +33,24 @@ const Hero = () => {
 <motion.div className="" key='hero-info'>
     {/* heading */}
   <motion.h1  className='text-[2.6rem] font-[400] py-1 sm:text-5xl md:text-6xl'>
-    <motion.span  variants={item} className="block">Create the</motion.span> 
-    <motion.span  variants={item} className="block">sliky <span className='underline decoration-wavy font-[300] text-transparent bg-clip-text gradient'>Gradient</span> </motion.span>
-  <motion.span variants={item}  className="block"> Nicely!</motion.span>
+    <motion.span  variants={item} className="block">The <span className='underline decoration-wavy font-[300] text-transparent bg-clip-text gradient'>Superfast</span></motion.span> 
+    <motion.span  variants={item} className="block">color Palettes</motion.span>
+  <motion.span variants={item}  className="block"> Generator!</motion.span>
   </motion.h1>
   {/* sub heading */}
-  <motion.p  variants={item} className='max-w-[400px] mx-auto md:text-sm text-xs my-3 px-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos corrupti numquam quasi necessitatibus.</motion.p>
+  <motion.p  variants={item} className='max-w-[400px] mx-auto md:text-sm text-xs my-3 px-2'>Create cool palettes from images or get inspired by beautiful color schemes.</motion.p>
   {/* cta */}
   <motion.div  variants={item} className="">
       {/* buttons */}
       <div className="sm:flex sm:w-[300px] sm:mx-auto md:mx-0 gap-2 justify-unset">
-          <Button className=" my-4 mx-auto md:mx-0 rounded-full flex align-center justify-center gradient">
-          <GetIcon className='text-white' /> <span className="mx-1 text-white">Get it Now</span> 
+          <a href="#">
+              <Button className=" my-4 mx-auto md:mx-0 rounded-full flex align-center justify-center gradient">
+          <GetIcon className='text-white' /> <span className="mx-1 text-white">Join Waitlist</span> 
           </Button>
-          <Button className=' my-4 mx-auto md:mx-0 rounded-full ring-black text-black ring-1 flex align-center justify-center dark:ring-white dark:text-white'> <ReadIcon /> <span className="mx-1">Read Article</span> </Button>
+          </a>
+          <a href="https://bossoncode.hashnode.dev/introducing-fetiino-extract-color-palettes-from-images-and-do-more-with-colors" target='_blank'>
+              <Button className=' my-4 mx-auto md:mx-0 rounded-full ring-black text-black ring-1 flex align-center justify-center dark:ring-white dark:text-white'> <ReadIcon /> <span className="mx-1">Read Article</span> </Button>
+          </a>
       </div>
       {/* tools extension */}
       <div className="flex my-4 justify-center md:justify-start text-sm items-center ">

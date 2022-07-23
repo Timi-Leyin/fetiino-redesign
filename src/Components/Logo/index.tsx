@@ -1,10 +1,12 @@
-import React from 'react'
+import  {Link} from 'react-router-dom'
 
 const Logo = () => {
   return (
-    <div className='custom_logo text-2xl font-[300]'>
+    <Link to='/'>
+      <div className='custom_logo text-2xl font-[300]'>
         <span className="">Fetiino</span>
     </div>
+    </Link>
   )
 }
 
