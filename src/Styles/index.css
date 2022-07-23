@@ -1,15 +1,3 @@
-// @font-face {
-//   font-family:'bligra' ;
-//   src: url('/src/Assets/fonts/Bligra-Regular.otf');
-//   font-weight:400
-// }
-
-// @font-face {
-//   font-family:'gilnger' ;
-//   src: url('/src/Assets/fonts/Gilnger-Regular.otf');
-//   font-weight:400
-// }
-
 
 @font-face {
   font-family:'chillax' ;
@@ -46,13 +34,13 @@
 
 html {
   scroll-behavior: smooth;
+}
 
   body {
-    font-family: 'chillax', "Georama", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    font-family: 'chillax', "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
       "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   }
 
-}
 
 
 ::-webkit-scrollbar{
