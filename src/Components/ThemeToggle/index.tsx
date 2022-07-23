@@ -2,14 +2,18 @@ import React, { useContext, useEffect, useState } from 'react'
 import { FaMoon as DarkIcon, FaSun as LightIcon } from 'react-icons/fa'
 
 const ThemeToggle = () => {
+    const storage = localStorage.getItem('theme')
+
     const [state, setState] = useState(true)
-    /* 
-    true <=> light
-    false <=> dark
-    */
-    const themeToggleHandler = ()=>  setState(!state);
-useEffect(()=>{
-    ( document.querySelector('html') as HTMLElement).dataset.mode=(state? 'light': 'dark')
+  
+    const themeToggleHandler = ()=>{
+        if (storage == 'light') localStorage.setItem('theme','dark')
+        else if(storage =='dark') localStorage.setItem('theme','light');
+        setState(!state)
+    }   
+    useEffect(()=>{
+    (document.querySelector('html') as HTMLElement).dataset.mode=(storage || 'light');
+    console.log(storage);
 },[state])
   return (
         <button onClick={themeToggleHandler} className=' w-[40px] relative h-[40px] rounded-full bg-gray-400 flex justify-center items-center dark:bg-gray-300 transition-colors'>

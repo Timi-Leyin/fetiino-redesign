@@ -21,20 +21,15 @@ import Preloader from "../Components/Preloader";
 
 const Home = () => {
   const containerRef = useRef(null);
-  const [loading, setLoad] = useState(true);
-  // useEffect(() => {
-  //   setTimeout(() => {
-    
-  //   }, 5000);
-  // }, []);
-  return loading ? <Preloader onComplete={()=> setLoad(false) } />  : (
+
+  return(
     <Fragment>
       <Helmet>
         <title>Fetiino - Home</title>
       </Helmet>
 
       <LocomotiveScrollProvider
-        watch={[loading]}
+        watch={[]}
         options={scrollOptions}
         containerRef={containerRef}
       >
