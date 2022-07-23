@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
 import iro from '@jaames/iro';
-import { motion } from 'framer-motion'
+import randomColor from '../../Utils/color';
+
 const ColorPicker = () => {
     const _ref= useRef(null);
-    const [color1, setColor1] = useState('#c084fc')
-    const [color2, setColor2] = useState('#db2777')
+    const [color1, setColor1] = useState(randomColor() || '#1d4ed8')
+    const [color2, setColor2] = useState(randomColor() || '#db2777')
     useEffect(()=>{
         if(!_ref) return
 
@@ -53,11 +54,7 @@ const ColorPicker = () => {
         })
     }, [color1, color2])
     
-  return (
-    <div ref={_ref} id='color-picker'>
-
-    </div>
-  )
+  return <div ref={_ref} id='color-picker'> </div>
 }
 
 export default ColorPicker
