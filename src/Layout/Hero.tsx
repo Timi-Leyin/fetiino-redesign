@@ -53,7 +53,7 @@ const Hero = () => {
           </a>
       </div>
       {/* tools extension */}
-      <a href='https://github.com/bossoncode/Fetiino'>
+      <a href='https://github.com/bossoncode/Fetiino' target="_blank">
       <div className="flex my-4 justify-center md:justify-start text-sm items-center ">
           <span>Contribute on</span>
           <div className="flex mx-3 gap-2">
