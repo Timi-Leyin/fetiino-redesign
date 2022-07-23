@@ -2,10 +2,11 @@ import { Fragment, lazy, Suspense } from "react";
 import {AnimatePresence} from 'framer-motion'
 import { Route, Routes, useLocation } from "react-router-dom";
 import 'locomotive-scroll/dist/locomotive-scroll.min.css'
-import _404 from "./Pages/_404";
 import Preloader from "./Components/Preloader";
 
 const Home = lazy(()=> import('./Pages/Home'))
+const _404 = lazy(()=> import("./Pages/_404"));
+
 const App = () => {
   const storage = localStorage.getItem('theme')
     if(!storage) localStorage.setItem('theme','light');
@@ -19,8 +20,9 @@ const App = () => {
         </Suspense>
           } />
 
-        <Route path="/load" element={<Preloader />} />
-        <Route path="*" element={<_404 />} />
+        <Route path="*" element={<Suspense fallback={<Preloader />}>
+          <_404 />
+        </Suspense>} />
       </Routes>
     </AnimatePresence>
   );
