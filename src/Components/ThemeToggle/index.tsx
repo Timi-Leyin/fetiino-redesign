@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FaMoon as DarkIcon, FaSun as LightIcon } from 'react-icons/fa'
 
 const ThemeToggle = () => {

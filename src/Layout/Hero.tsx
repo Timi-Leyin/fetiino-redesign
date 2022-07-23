@@ -5,7 +5,6 @@ import {Helmet} from 'react-helmet';
 import GradientBlur  from '../Components/GradientBlur'
 import { Fragment, useEffect, useState } from "react";
 import ColorPicker from "../Components/ColorPicker";
-// import ColorPicker from 'irojs-react';
 
 const animation={
     initial:{

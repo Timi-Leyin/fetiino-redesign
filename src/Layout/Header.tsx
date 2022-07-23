@@ -1,4 +1,3 @@
-import React from 'react'
 import {motion} from 'framer-motion';
 import Logo from '../Components/Logo';
 import NavLinks from '../Components/NavLinks';

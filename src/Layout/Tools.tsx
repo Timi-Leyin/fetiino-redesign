@@ -1,6 +1,4 @@
-import React from 'react'
-import { FaArrowRight } from 'react-icons/fa'
-import Button from '../Components/Button'
+
 import Tool from '../Components/Tool'
 
 const Tools = () => {

@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { BaseSyntheticEvent, useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import Logo from '../Components/Logo';

@@ -1,9 +1,4 @@
-import iro from "@jaames/iro";
 import { motion } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
-import Logo from "../Logo";
-import { useAnimation } from "framer-motion";
-import gsap from 'gsap'
 import { FaSpinner } from "react-icons/fa";
 
 interface PreloaderProps{

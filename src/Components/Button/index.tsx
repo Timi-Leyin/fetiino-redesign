@@ -1,4 +1,4 @@
-import {ButtonHTMLAttributes, HTMLAttributes, ReactNode, useState} from 'react'
+import {ReactNode} from 'react'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
     children?: ReactNode,

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Feature from '../Components/Feature'
 import { motion } from 'framer-motion'
 const Features = () => {

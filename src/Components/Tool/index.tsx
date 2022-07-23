@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FaArrowRight } from 'react-icons/fa'
 import Button from '../Button'
 import {motion} from 'framer-motion'
