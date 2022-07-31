@@ -20,20 +20,15 @@ A web app thats creates cool color palettes from images or get inspired by beaut
 
 # Todo
 
-- cleanup setup ( - )
 - created style guide README ( - )
-- install framer-motion sass gsap ( - )
-- install locomotive-scroll react-locomotive-scroll ( - )
-- install postcss tailwindcss autoprefixer ( - )
+- configure smooth scroll ( - )
 - configure tailwindcss ( - )
 - vite 3.0.0 ( - )
 - dark mode ( - )
 - random gradients generate ( - )
 - install react-helmet ( - )
-- smooth scroll ( - )
-- remove gsap (-)
-- add more tweets ( - )
 - design responsivness ( - )
+- add more tweets ( )
 - configure eslint ( )
 
 # Front-end Style Guide
