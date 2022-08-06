@@ -9,11 +9,19 @@ const ColorGenerator = () => {
     <Helmet>
       <title>Fetiino - Color Generator</title>
     </Helmet>
-    <main className=' p-6 h-screen relative flex'>
-      <SideBar />
+    <main className=''>
       <div className="panel w-full relative">
       <Header />
       </div>
+     
+     <div className=" p-6 h-screen relative flex">
+
+    <SideBar />
+
+     <div className="px-6">
+        <h1 className='text-5xl font-[700]'>Color Generator</h1>
+      </div>
+     </div>
     </main>
     </Fragment>
   )

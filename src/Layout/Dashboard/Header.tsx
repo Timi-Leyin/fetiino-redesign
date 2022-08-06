@@ -1,11 +1,15 @@
 import { FaHeart } from "react-icons/fa";
+import Logo from "../../Components/Logo";
 import ThemeToggle from "../../Components/ThemeToggle";
 import Search from "./Search";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center px-[5%]">
+    <div className="flex justify-between items-center pt-6 px-[5%]">
+    <div className="flex items-center justify-between gap-x-3">
+    <Logo />
       <Search />
+    </div>
 
       <div className="flex gap-x-3 items-center">
         <ThemeToggle />

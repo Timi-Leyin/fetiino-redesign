@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react'
-import { FaPalette } from 'react-icons/fa'
+import { FaAirbnb, FaCampground, FaHome, FaPalette, FaUber, FaUbuntu } from 'react-icons/fa'
+import { MdHdrAutoSelect } from 'react-icons/md'
 import Logo from '../../Components/Logo'
 
 
@@ -10,7 +11,7 @@ interface SideBarItemProps{
 
 const SideBarItem =({title,icon}:SideBarItemProps)=>{
   return(
-    <li className="my-5" title={title}>
+    <li className="my-4 text-2xl" title={title}>
     <span>{icon}</span>
   </li>
   )
@@ -19,14 +20,13 @@ const SideBarItem =({title,icon}:SideBarItemProps)=>{
 
 const SideBar = () => {
   return (
-   <aside className='w-[auto] py-1'>
-       <Logo />
-
-       <ul className='flex flex-col justify-centerr items-center'>
-        <SideBarItem title='Color Generator' icon={<FaPalette />} />
-        <SideBarItem title='Color Generator' icon={<FaPalette />} />
-        <SideBarItem title='Color Generator' icon={<FaPalette />} />
-        <SideBarItem title='Color Generator' icon={<FaPalette />} />
+   <aside className='w-[5%]'>
+       <ul className='flex x-[30%] flex-col justify-center gap-y-4 items-center'>
+        <SideBarItem title='Color Generator' icon={<FaHome />} />
+        <SideBarItem title='Color Generator' icon={<FaAirbnb />} />
+        <SideBarItem title='Color Generator' icon={<FaCampground />} />
+        <SideBarItem title='Color Generator' icon={<FaUber />} />
+        <SideBarItem title='Color Generator' icon={<FaUbuntu />} />
        </ul>
    </aside>
   )
