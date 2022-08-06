@@ -12,7 +12,7 @@ interface SideBarItemProps{
 
 const SideBarItem =({title,icon,active=false}:SideBarItemProps)=>{
   return(
-    <li className={`${active && 'bg-gray-300 dark:bg-gray-800 opacity-100 text-primary' } transition-all hover:opacity-100 opacity-70  my-4 text-lg cursor-pointer p-3  rounded-full dark `} title={title}>
+    <li className={`${active && 'bg-gray-300 dark:bg-gray-800 opacity-100 text-primary' } transition-all hover:opacity-100 opacity-70  my-1 text-lg cursor-pointer p-3  rounded-full dark `} title={title}>
     <span className=''>{icon}</span>
   </li>
   )
