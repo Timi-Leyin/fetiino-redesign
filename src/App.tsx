@@ -4,6 +4,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import "locomotive-scroll/dist/locomotive-scroll.min.css";
 import Preloader from "./Components/Preloader";
 import Favourite from "./Pages/Favourite";
+import ColorPicker from "./Pages/ColorPicker";
 
 const Home = lazy(() => import("./Pages/Home"));
 const _404 = lazy(() => import("./Pages/_404"));
@@ -35,6 +36,16 @@ const App = () => {
             </Suspense>
           }
         />
+        
+        <Route
+          path="/colorPicker"
+          element={
+            <Suspense fallback={<Preloader />}>
+              <ColorPicker />
+            </Suspense>
+          }
+        />
+
         <Route
           path="/colorGenerator"
           element={
