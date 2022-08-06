@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import { FaAirbnb, FaCampground, FaHome, FaPalette, FaUber, FaUbuntu } from 'react-icons/fa'
+import { FaAd, FaAirbnb, FaCampground, FaHome, FaPalette, FaUber, FaUbuntu } from 'react-icons/fa'
 import { MdHdrAutoSelect } from 'react-icons/md'
 import Logo from '../../Components/Logo'
 
@@ -27,6 +27,7 @@ const SideBar = () => {
         <SideBarItem title='Color Generator' icon={<FaAirbnb />} />
         <SideBarItem title='Color Generator' icon={<FaCampground />} />
         <SideBarItem title='Color Generator' icon={<FaUber />} />
+        <SideBarItem title='Color Generator' icon={<FaAd />} />
         <SideBarItem title='Color Generator' icon={<FaUbuntu />} />
        </ul>
    </aside>
