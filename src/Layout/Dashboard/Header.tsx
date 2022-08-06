@@ -4,7 +4,7 @@ import Search from "./Search";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center px-[5%]">
       <Search />
 
       <div className="flex gap-x-3 items-center">
