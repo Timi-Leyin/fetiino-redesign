@@ -1,8 +1,10 @@
 import React from 'react'
+import DashboardLayout from '../Layout/Dashboard/DashboardLayout'
 
 const Favourite = () => {
   return (
-    <div>Favourite</div>
+    <DashboardLayout title='Favourite'> 
+    </DashboardLayout>
   )
 }
 

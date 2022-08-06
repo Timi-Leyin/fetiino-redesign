@@ -3,6 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "locomotive-scroll/dist/locomotive-scroll.min.css";
 import Preloader from "./Components/Preloader";
+import Favourite from "./Pages/Favourite";
 
 const Home = lazy(() => import("./Pages/Home"));
 const _404 = lazy(() => import("./Pages/_404"));
@@ -26,6 +27,14 @@ const App = () => {
           }
         />
 
+        <Route
+          path="/favourites"
+          element={
+            <Suspense fallback={<Preloader />}>
+              <Favourite />
+            </Suspense>
+          }
+        />
         <Route
           path="/colorGenerator"
           element={
