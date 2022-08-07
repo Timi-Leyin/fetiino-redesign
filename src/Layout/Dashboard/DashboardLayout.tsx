@@ -13,8 +13,8 @@ const DashboardLayout = ({children, title}:{children:ReactNode, title:string}) =
 
   <SideBar />
 
-   <div className="px-6">
-   <h1 className='text-5xl font-[700]'>{title}</h1>
+   <div className="px-6 mt-12 relative w-full">
+   <h1 className='text-5xl mt-4 font-[700]'>{title}</h1>
      {children}
     </div>
    </div>

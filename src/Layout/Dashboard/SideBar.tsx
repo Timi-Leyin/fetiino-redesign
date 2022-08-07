@@ -21,7 +21,7 @@ const SideBarItem =({title,icon,active=false}:SideBarItemProps)=>{
 
 const SideBar = () => {
   return (
-   <aside className='w-[5%]'>
+   <aside className='mt-12 w-[5%]'>
        <ul className='flex x-[30%] flex-col justify-center gap-y-4 items-center'>
         <SideBarItem title='Color Generator' active={true} icon={<FaHome />} />
         <SideBarItem title='Color Generator' icon={<FaAirbnb />} />

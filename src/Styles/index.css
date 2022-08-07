@@ -66,5 +66,7 @@ html {
   .flex-center{
     @apply flex items-center justify-center
   }
-
+  .filter-invert-1{
+    filter:invert(1)
+  }
 }

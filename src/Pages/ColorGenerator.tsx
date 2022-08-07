@@ -10,7 +10,7 @@ const ColorGenerator = () => {
       <title>Fetiino - Color Generator</title>
     </Helmet>
    <DashboardLayout title='Color Generator'>
-     
+     <div className="h-5 p-3 w-5 bg-red-600"></div>
    </DashboardLayout>
     </Fragment>
   )
