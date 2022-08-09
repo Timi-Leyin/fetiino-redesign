@@ -6,6 +6,7 @@ import Preloader from "./Components/Preloader";
 import Favourites from "./Pages/Favourites";
 import ColorPicker from "./Pages/ColorPicker";
 import Converter from "./Pages/Converter";
+import Extract from "./Pages/Extract";
 
 const Home = lazy(() => import("./Pages/Home"));
 const _404 = lazy(() => import("./Pages/_404"));
@@ -29,6 +30,14 @@ const App = () => {
           }
         />
 
+        <Route
+          path="/extract"
+          element={
+            <Suspense fallback={<Preloader />}>
+              <Extract />
+            </Suspense>
+          }
+        />
         <Route
           path="/converter"
           element={
