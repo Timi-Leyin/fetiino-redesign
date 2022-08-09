@@ -7,7 +7,14 @@ const Favourite = () => {
   return (
     <DashboardLayout title='Favourites' paragraph='Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere iusto.
     '> 
-    <ColorCard />
+    <div className="flex flex-wrap gap-8 p-4 justify-center">
+    <ColorCard name={'Electric Spenser'} type={'GRADIENT'} />
+    <ColorCard name={'Burger Squash'} type={'GRADIENT'} />
+    <ColorCard name={'Butterfly Crazy'} type={'GRADIENT'} />
+    <ColorCard name={'Blessing Peach'} type={'COLOR'} />
+    <ColorCard name={'Fetiino Bloom'} type={'GRADIENT'} />
+    <ColorCard name={'Prosperous Melody'} type={'GRADIENT'} />
+    </div>
     </DashboardLayout>
   )
 }
