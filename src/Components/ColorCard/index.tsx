@@ -1,19 +1,34 @@
 import React from 'react'
-
+import { FaFileExport, FaTrash } from 'react-icons/fa'
+import randomColor from '../../Utils/color'
 interface ColorCardProps<T=string>{
     name:T,
     type:T,
-    className?:T
+    className?:T,
+    color?:T,
 }
 
-const ColorCard = ({name,type,className}:ColorCardProps) => {
+const ColorCard = ({name,type,className, color=randomColor()}:ColorCardProps) => {
   return (
-    <div className={`${className} w-[200px] cursor-pointer transition-all rounded-md relative h-[250px] bg-yellow-400 after:w-[50px] after:absolute after:right-0  after:block after:h-[20px] after:top-[-10px] after:rounded-l-xl after:rounded-tr-md after:bg-inherit`}>
-        <div className="">
-            <div className="p-4">
-            <h3 className='font-[300] text-1xl y-[10px] filter-invert-1'>Type: {type}</h3>
-            <h5 className='font-[200] text-2xl filter-invert-1'>{name}</h5>
+    <div style={{backgroundColor:color}} className={`${className} w-[250px] text-black cursor-pointer transition-all rounded-md relative h-[150px] bg-transparent after:w-[50px] after:absolute after:right-0  after:block after:h-[20px] after:top-[-10px] after:rounded-l-xl after:rounded-tr-md after:bg-inherit`}>
+        <div className="p-4">
+            <div className="flex justify-between">
+            <h3 className='font-[300] text-lg y-[10px]'>Fetiino</h3>
+            <h5 className='flex items-center gap-1 text-xs'><FaFileExport /> <span className=''>Export</span></h5>
             </div>
+
+
+    <div className="py-3">
+      <h2 className="font-[500] text-3xl">Bedrock</h2>
+      <div className="ring-1 ring-black my-2"></div>
+    </div>
+
+
+    <div className="text-xs flex justify-between items-center">
+      <h4>GRADIENT</h4>
+      <span><FaTrash /></span>
+    </div>
+
         </div>
     </div>
   )
