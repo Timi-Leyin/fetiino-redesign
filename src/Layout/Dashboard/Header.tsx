@@ -16,7 +16,7 @@ const Header = () => {
 
         <div className="bg-gray-200 py-2 p-4 flex items-center gap-3 cursor-pointer rounded-full dark:bg-gray-800">
           <FaHeart className="text-red-500 " />
-          <span>Favourites</span>
+          <span className='hidden md:block'>Favourites</span>
         </div>
       </div>
     </div>

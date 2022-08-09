@@ -5,7 +5,7 @@ const Extract = () => {
   return (
     <DashboardLayout title='Color Extract' paragraph='Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere iusto.
     '> 
-       <div className="flex justify-between px-6 gap-10">
+       <div className="flex flex-col md:flex-row justify-between px-6 py-8 gap-10">
 
     <div className="">
         <h2 className='text-3xl'>Upload Image</h2>
@@ -35,9 +35,9 @@ const Extract = () => {
 
 
 
-    <div className="">
+    <div className="hidden md:block">
         <div className="pb-3">
-            <h3 className='text-3xl'>Dominant Color</h3>
+            <h3 className='w-[250px] text-2xl'>Dominant Color</h3>
         </div>
 
     {/* color card */}
