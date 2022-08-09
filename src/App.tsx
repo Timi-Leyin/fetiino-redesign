@@ -5,6 +5,7 @@ import "locomotive-scroll/dist/locomotive-scroll.min.css";
 import Preloader from "./Components/Preloader";
 import Favourites from "./Pages/Favourites";
 import ColorPicker from "./Pages/ColorPicker";
+import Converter from "./Pages/Converter";
 
 const Home = lazy(() => import("./Pages/Home"));
 const _404 = lazy(() => import("./Pages/_404"));
@@ -28,6 +29,14 @@ const App = () => {
           }
         />
 
+        <Route
+          path="/converter"
+          element={
+            <Suspense fallback={<Preloader />}>
+              <Converter />
+            </Suspense>
+          }
+        />
         <Route
           path="/favourites"
           element={
