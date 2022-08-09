@@ -9,9 +9,9 @@ const DashboardLayout = ({children, title}:{children:ReactNode, title:string}) =
    
   <Navigation />
 
-   <div className=" p-6 h-screen relative">
+   <div className=" p-6 px-[5%] h-screen relative">
 
-   <h1 className='text-5xl mt-2 font-[700]'>{title}</h1>
+   <h1 className='text-5xl font-[500]'>{title}</h1>
      {children}
     </div>
 
