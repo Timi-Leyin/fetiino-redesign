@@ -12,8 +12,9 @@ interface SideBarItemProps{
 
 const SideBarItem =({title,icon,active=false}:SideBarItemProps)=>{
   return(
-    <li className={`${active && 'bg-gray-300 dark:bg-gray-800 opacity-100 text-primary' } transition-all hover:opacity-100 opacity-70  my-1 text-lg cursor-pointer p-3  rounded-full dark `} title={title}>
-    <span className=''>{icon}</span>
+    <li className={`${active && 'bg-gray-300 overflow-x-auto dark:bg-gray-800 opacity-100 text-primary' } flex items-center justify-center transition-all hover:opacity-100 opacity-70  gap-2 my-1 text-lg cursor-pointer p-3  rounded-full dark `} title={title}>
+    <span className=' flex-shrink-0'>{icon}</span>
+    <span className="text-xs flex-shrink-0">{title}</span>
   </li>
   )
 }
@@ -21,8 +22,8 @@ const SideBarItem =({title,icon,active=false}:SideBarItemProps)=>{
 
 const SideBar = () => {
   return (
-   <aside className='mt-12 w-[5%]'>
-       <ul className='flex x-[30%] flex-col justify-center gap-y-4 items-center'>
+   <aside className=' relative '>
+       <ul className='flex  justify-around w-[500px] mx-auto gap-4 items-center'>
         <SideBarItem title='Color Generator' active={true} icon={<FaHome />} />
         <SideBarItem title='Color Generator' icon={<FaAirbnb />} />
         <SideBarItem title='Color Generator' icon={<FaCampground />} />

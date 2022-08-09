@@ -5,7 +5,7 @@ import Search from "./Search";
 
 const Header = () => {
   return (
-    <div className="flex fixed top-0 w-full left-0 justify-between items-center pt-6 px-[5%]">
+    <div className="flex relative w-full justify-between items-center py-6 px-[5%]">
     <div className="flex items-center justify-between gap-x-3">
     <Logo />
       <Search />
