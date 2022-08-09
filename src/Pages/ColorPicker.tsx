@@ -1,6 +1,6 @@
 import iro from '@jaames/iro';
 import React, { useEffect, useRef } from 'react'
-import ColorFolder from '../Components/ColorFolder';
+import ColorFolder from '../Components/ColorCard';
 import DashboardLayout from '../Layout/Dashboard/DashboardLayout'
 
 const ColorPicker = () => {

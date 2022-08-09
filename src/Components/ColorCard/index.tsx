@@ -1,12 +1,12 @@
 import React from 'react'
 
-interface ColorFolderProps<T=string>{
+interface ColorCardProps<T=string>{
     name:T,
     type:T,
     className?:T
 }
 
-const ColorFolder = ({name,type,className}:ColorFolderProps) => {
+const ColorCard = ({name,type,className}:ColorCardProps) => {
   return (
     <div className={`${className} w-[200px] cursor-pointer transition-all rounded-md relative h-[250px] bg-yellow-400 after:w-[50px] after:absolute after:right-0  after:block after:h-[20px] after:top-[-10px] after:rounded-l-xl after:rounded-tr-md after:bg-inherit`}>
         <div className="">
@@ -19,4 +19,4 @@ const ColorFolder = ({name,type,className}:ColorFolderProps) => {
   )
 }
 
-export default ColorFolder
+export default ColorCard
