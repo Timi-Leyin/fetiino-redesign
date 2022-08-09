@@ -21,7 +21,7 @@ const Extract = () => {
     <p> or </p>
    </div>
     <button className='bg-primary px-4 relative text-white py-2 my-2 text-xs cursor-pointer'>Browse
-    <input type="file" name="image" id="image" className='absolute select-none w-full h-full top-0 left-0 opacity-0' />
+    <input type="file" name="image" accept='.png, .jpg' id="image" className='cursor-pointer absolute select-none w-full h-full top-0 left-0 opacity-0' />
     </button>
 
     <p className='text-xs py-2 w-[200px]'>
