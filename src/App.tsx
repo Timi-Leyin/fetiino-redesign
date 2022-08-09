@@ -3,7 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "locomotive-scroll/dist/locomotive-scroll.min.css";
 import Preloader from "./Components/Preloader";
-import Favourite from "./Pages/Favourite";
+import Favourites from "./Pages/Favourites";
 import ColorPicker from "./Pages/ColorPicker";
 
 const Home = lazy(() => import("./Pages/Home"));
@@ -32,7 +32,7 @@ const App = () => {
           path="/favourites"
           element={
             <Suspense fallback={<Preloader />}>
-              <Favourite />
+              <Favourites />
             </Suspense>
           }
         />

@@ -3,7 +3,8 @@ import DashboardLayout from '../Layout/Dashboard/DashboardLayout'
 
 const Favourite = () => {
   return (
-    <DashboardLayout title='Favourite'> 
+    <DashboardLayout title='Favourites' paragraph='Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere iusto.
+    '> 
     </DashboardLayout>
   )
 }
