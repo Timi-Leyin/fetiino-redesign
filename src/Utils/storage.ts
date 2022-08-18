@@ -10,7 +10,7 @@ const Storage = (loc:string)=>{
             const old_data = localStorage.getItem(loc)  || JSON.stringify([]);
             const new_data = JSON.parse(old_data)
             new_data.push(data)
-            console.log(new_data)
+        // TODO::: Remove dupdlicate values
             return localStorage.setItem(loc,JSON.stringify(new_data))
         },
 
