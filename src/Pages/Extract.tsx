@@ -4,30 +4,27 @@ import DashboardLayout from '../Layout/Dashboard/DashboardLayout'
 import Color, { Palette } from 'color-thief-react'
 import { ReducerState, ArrayRGB } from 'color-thief-react/lib/types'
 import { ColorCard2 } from '../Components/ColorCard'
+import Loading from '../Components/Loading'
+
+interface StatusInterface{
+    loading:boolean | null,
+    error:any
+}
+
+
 
 const Extract = () => {
     const [image, setImage] = useState('')
-    const [dominantColors, setDominantColors] = useState<any>();
-    // const {data, loading, error} =  useColor(image, 'hex');
-   
-    // useEffect(()=>{
-    //     setDominantColors(data)
-    //     console.log(dominantColors)
-    // },[image])
-
-    const getDominant = (src:string)=>{
-    //   console.log(data)
-    }
-
+    const [colors, setcolors] = useState<any[]>([]);
 
 
     const browseImage = (e:any)=>{
         const src = URL.createObjectURL(e.target.files[0]);
-        // URL.revokeObjectURL(src)
         setImage(src)
-        getDominant(src)
-        console.log(src)
+        setcolors([''])
     }
+
+
   return (
     <DashboardLayout title='Color Extract' paragraph='Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere iusto.
     '> 
@@ -69,28 +66,39 @@ const Extract = () => {
 
     {/* color card */}
 
-   <Color src={image} format={'rgbString'}>
-    {({ data, loading, error }) => ( <ColorCard2 color={data} />  )}
+   <Color src={image} format={'hex'}>
+    {({ data, loading, error }) => (loading? <Loading /> : <ColorCard2 color={data} />  )}
    </Color>
 
 {/* ** */}
     {/* color card */}
 
-    <div className='py-5'>
-    <Palette src={image} colorCount={5} format={'rgbString'}>
-  {({ data, loading, error }) => (
-      data && data.map((c)=>  <ColorCard2 key={c} color={c && c} />)
-  )}
-</Palette>
+   {
+       colors.length > 0 &&(
+        <div className='py-5'>
+        <Palette src={image} colorCount={5} format={'hex'}>
+      {({ data, loading, error }) => {
+        data && setcolors(data);
+        return  ( loading?  <Loading /> : data && data.map((c)=>  <ColorCard2 key={c} color={c} />)  )
+    }}
+    </Palette>
+    
+        </div>
+       )
+       
+   }
 
-    </div>
 
-{/* ** */}
+
+{
+    colors.length > 0 && (
 
 <div className="mt-12 flex flex-col gap-2">
     <button className='p-3 bg-primary text-white text-xs flex gap-x-2 items-center'><FaFileExport /> {' '} <span>Export Palette</span></button>
     <button className='p-3 bg-gray-900 text-white text-xs flex gap-x-2 items-center'><FaHeart /> {' '} <span>Save Palette</span></button>
 </div>
+    )
+}
 
     </div>
 
