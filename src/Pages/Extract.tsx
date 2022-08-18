@@ -81,7 +81,6 @@ const Extract = () => {
         <div className='py-5'>
         <Palette src={image} colorCount={5} format={'hex'}>
       {({ data, loading, error }) => {
-          console.log(error)
         data && setcolors(data);
         return  ( loading?  <Loading /> : data && data.map((c)=>  <ColorCard2 key={c} color={c} />)  )
     }}
