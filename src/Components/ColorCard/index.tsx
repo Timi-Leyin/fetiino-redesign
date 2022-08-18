@@ -36,10 +36,10 @@ const ColorCard = ({name,type,className, color=randomColor(200,100,250)}:ColorCa
 
 
 
-export const ColorCard2  = ({color}:{color:string})=>{
+export const ColorCard2  = ({color}:{color?:string})=>{
   return(
-    <div className='_color_card p-2 flex justify-between items-center w-full font-bold text-xs' style={{background:color}}>
-    <span className='text-green-900'>{color}</span>
+    <div className='_color_card p-2 flex justify-between items-center w-full font-bold text-xs' style={{background:color || 'transparent'}}>
+    <span className='filter-invert-1'>{color && color}</span>
     <span className='icon transition-all cursor-pointer text-gray-700  inline-block shadow-sm'>
         <FaCopy />
     </span>
