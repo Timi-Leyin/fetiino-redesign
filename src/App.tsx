@@ -7,6 +7,7 @@ import Favourites from "./Pages/Favourites";
 import ColorPicker from "./Pages/ColorPicker";
 import Converter from "./Pages/Converter";
 import Extract from "./Pages/Extract";
+import GradientMaker from "./Pages/GradientMaker";
 
 const Home = lazy(() => import("./Pages/Home"));
 const _404 = lazy(() => import("./Pages/_404"));
@@ -65,10 +66,19 @@ const App = () => {
         />
 
         <Route
-          path="/colorGenerator"
+          path="/generate"
           element={
             <Suspense fallback={<Preloader />}>
               <ColorGenerator />
+            </Suspense>
+          }
+        />
+
+        <Route
+          path="/gradient-maker"
+          element={
+            <Suspense fallback={<Preloader />}>
+              <GradientMaker />
             </Suspense>
           }
         />

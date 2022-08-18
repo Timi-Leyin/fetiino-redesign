@@ -1,17 +1,40 @@
 import React, { Fragment } from 'react'
 import { Helmet } from 'react-helmet'
+import { FaCopy, FaHeart } from 'react-icons/fa'
+import { ColorCard2, ColorPalette } from '../Components/ColorCard'
 import DashboardLayout from '../Layout/Dashboard/DashboardLayout'
+
+
 
 
 const ColorGenerator = () => {
   return (
     <Fragment>
     <Helmet>
-      <title>Fetiino - Color Generator</title>
+      <title>Fetiino - Color Palette Generator</title>
     </Helmet>
-   <DashboardLayout title='Color Generator' paragraph='Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere iusto.
+   <DashboardLayout title='Palette Generator' paragraph='Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere iusto.
 '>
-     <div className="h-5 p-3 w-5 bg-red-600"></div>
+
+
+    
+<div className="flex gap-5 mt-8 flex-wrap">
+
+<ColorPalette colors={["#FFE001", "#F5EAD5", "#FFEFFF", "#EEEEEE"]} />
+<ColorPalette colors={["#FFE001", "#F5EAD5", "#FFEFFF", "#EEEEEE"]} />
+<ColorPalette colors={["#FFE001", "#F5EAD5", "#FFEFFF", "#EEEEEE"]} />
+<ColorPalette colors={["#FFE001", "#F5EAD5", "#FFEFFF", "#EEEEEE"]} />
+<ColorPalette colors={["#FFE001", "#F5EAD5", "#FFEFFF", "#EEEEEE"]} />
+
+
+</div>
+
+
+
+
+
+
+
    </DashboardLayout>
     </Fragment>
   )

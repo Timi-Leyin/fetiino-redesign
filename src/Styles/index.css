@@ -49,6 +49,15 @@ html {
   width:0;
 }
   
+  ._color_card .icon{
+    opacity:0;
+  }
+  
+  ._color_card:hover .icon{
+    opacity:1;
+  }
+
+
   /** TAILWIND **/
   @tailwind base;
   @tailwind components;
