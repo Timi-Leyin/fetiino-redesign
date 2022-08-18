@@ -41,6 +41,9 @@ html {
       "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   }
 
+  .spinning{
+    transform-origin: 100%;
+  }
 
 
 ::-webkit-scrollbar{
@@ -76,6 +79,8 @@ html {
     @apply flex items-center justify-center
   }
   .filter-invert-1{
-    filter:invert(1)
+    /* text-shadow:0 0 6px #000; */
+    @apply text-white;
+    /* filter:invert(1); */
   }
 }

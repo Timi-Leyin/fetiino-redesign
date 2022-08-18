@@ -56,7 +56,7 @@ export const ColorCard2  = ({color}:{color?:string})=>{
 
 export const  ColorPalette = ({colors}:{colors:string[]})=>{
   return(
-    <div className="w-[250px]">
+    <div className="">
     <div className="">
     
     {
@@ -67,8 +67,8 @@ export const  ColorPalette = ({colors}:{colors:string[]})=>{
     
     
     <div className="p-3">
-      <span className='text-red-600 cursor-pointer'>
-        <FaHeart />
+      <span className='text-red-600 p-3 w-[100px] rounded-full bg-gray-800 flex gap-1 cursor-pointer'>
+        <FaHeart /> <span className="text-xs text-white">Save</span>
       </span>
     </div>
     </div>
