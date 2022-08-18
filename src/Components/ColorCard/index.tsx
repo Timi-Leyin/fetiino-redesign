@@ -1,7 +1,11 @@
 import React, { useRef, useState } from 'react'
 import { FaCopy, FaFileExport, FaHeart, FaTrash } from 'react-icons/fa'
 import save from '../../Actions/save'
-import randomColor from '../../Utils/color'
+import randomColor from '../../Utils/color';
+import {v1 as uuid} from 'uuid'
+
+
+
 interface ColorCardProps<T=string>{
     name:T,
     type:T,
@@ -72,6 +76,7 @@ export const  ColorPalette = ({colors}:{colors:string[]})=>{
       <span onClick={()=>{
         setStatus(true)
          save('favourites', {
+        id:uuid(),
         type:'color',
         data:colors
       })

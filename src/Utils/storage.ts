@@ -1,5 +1,6 @@
 
 export interface StorageData{
+    id:string;
     type:'gradient' | 'color';
     data: string[]
 }
