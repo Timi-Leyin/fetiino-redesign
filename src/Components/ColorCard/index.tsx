@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFileExport, FaTrash } from 'react-icons/fa'
+import { FaCopy, FaFileExport, FaHeart, FaTrash } from 'react-icons/fa'
 import randomColor from '../../Utils/color'
 interface ColorCardProps<T=string>{
     name:T,
@@ -33,5 +33,42 @@ const ColorCard = ({name,type,className, color=randomColor(200,100,250)}:ColorCa
     </div>
   )
 }
+
+
+
+export const ColorCard2  = ({color}:{color:string})=>{
+  return(
+    <div className='_color_card p-2 flex justify-between items-center w-full font-bold text-xs' style={{background:color}}>
+    <span className='text-green-900'>{color}</span>
+    <span className='icon transition-all cursor-pointer text-gray-700  inline-block shadow-sm'>
+        <FaCopy />
+    </span>
+</div>
+  )
+}
+
+
+export const  ColorPalette = ({colors}:{colors:string[]})=>{
+  return(
+    <div className="w-[250px]">
+    <div className="">
+    
+    {
+       colors.map((color)=> <ColorCard2 key={color} color={color} /> )
+    }
+    
+    </div>
+    
+    
+    <div className="p-3">
+      <span className='text-red-600 cursor-pointer'>
+        <FaHeart />
+      </span>
+    </div>
+    </div>
+    
+  )
+}
+
 
 export default ColorCard
