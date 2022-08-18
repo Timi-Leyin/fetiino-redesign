@@ -1,7 +1,33 @@
+import { ReactNode, SyntheticEvent, useEffect, useState } from 'react'
 import { FaCopy, FaFileExport, FaFileImage, FaFileImport, FaHeart } from 'react-icons/fa'
 import DashboardLayout from '../Layout/Dashboard/DashboardLayout'
+import Color, { Palette } from 'color-thief-react'
+import { ReducerState, ArrayRGB } from 'color-thief-react/lib/types'
+import { ColorCard2 } from '../Components/ColorCard'
 
 const Extract = () => {
+    const [image, setImage] = useState('')
+    const [dominantColors, setDominantColors] = useState<any>();
+    // const {data, loading, error} =  useColor(image, 'hex');
+   
+    // useEffect(()=>{
+    //     setDominantColors(data)
+    //     console.log(dominantColors)
+    // },[image])
+
+    const getDominant = (src:string)=>{
+    //   console.log(data)
+    }
+
+
+
+    const browseImage = (e:any)=>{
+        const src = URL.createObjectURL(e.target.files[0]);
+        // URL.revokeObjectURL(src)
+        setImage(src)
+        getDominant(src)
+        console.log(src)
+    }
   return (
     <DashboardLayout title='Color Extract' paragraph='Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere iusto.
     '> 
@@ -21,10 +47,11 @@ const Extract = () => {
     <p> or </p>
    </div>
     <button className='bg-primary px-4 relative text-white py-2 my-2 text-xs cursor-pointer'>Browse
-    <input type="file" name="image" accept='.png, .jpg' id="image" className='cursor-pointer absolute select-none w-full h-full top-0 left-0 opacity-0' />
+    <input type="file" name="image" onChange={browseImage} accept='.png, .jpg' id="image" className='cursor-pointer absolute select-none w-full h-full top-0 left-0 opacity-0' />
     </button>
 
     <p className='text-xs py-2 w-[200px]'>
+        <img src={image} alt="" />
         Upload images only in (*.png .jpg .jpeg .gif) format.
     </p>
         </div>
@@ -42,21 +69,20 @@ const Extract = () => {
 
     {/* color card */}
 
-    <div className='p-2 flex justify-between my-2 items-center bg-yellow-400 font-bold text-xs'>
-        <span className='text-yellow-900'>#FFE001</span>
-        <span className='cursor-pointer text-gray-700  inline-block shadow-sm'>
-            <FaCopy />
-        </span>
-    </div>
+   <Color src={image} format={'rgbString'}>
+    {({ data, loading, error }) => ( <ColorCard2 color={data} />  )}
+   </Color>
 
 {/* ** */}
     {/* color card */}
 
-    <div className='p-2 flex justify-between my-2 items-center bg-green-400 font-bold text-xs'>
-        <span className='text-green-900'>#EED001</span>
-        <span className='cursor-pointer text-gray-700  inline-block shadow-sm'>
-            <FaCopy />
-        </span>
+    <div className='py-5'>
+    <Palette src={image} colorCount={5} format={'rgbString'}>
+  {({ data, loading, error }) => (
+      data && data.map((c)=>  <ColorCard2 key={c} color={c && c} />)
+  )}
+</Palette>
+
     </div>
 
 {/* ** */}
