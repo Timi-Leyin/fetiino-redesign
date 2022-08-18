@@ -5,6 +5,8 @@ import Color, { Palette } from 'color-thief-react'
 import { ReducerState, ArrayRGB } from 'color-thief-react/lib/types'
 import { ColorCard2 } from '../Components/ColorCard'
 import Loading from '../Components/Loading'
+import {v1 as uuid} from 'uuid'
+import save from '../Actions/save'
 
 interface StatusInterface{
     loading:boolean | null,
@@ -16,11 +18,12 @@ interface StatusInterface{
 const Extract = () => {
     const [image, setImage] = useState('')
     const [colors, setcolors] = useState<any[]>([]);
-
+    const [saved, setStatus] = useState(false)
 
     const browseImage = (e:any)=>{
+        setStatus(false)
         const src = URL.createObjectURL(e.target.files[0]);
-        setImage(src)
+          setImage(src)
         setcolors([''])
     }
 
@@ -78,6 +81,7 @@ const Extract = () => {
         <div className='py-5'>
         <Palette src={image} colorCount={5} format={'hex'}>
       {({ data, loading, error }) => {
+          console.log(error)
         data && setcolors(data);
         return  ( loading?  <Loading /> : data && data.map((c)=>  <ColorCard2 key={c} color={c} />)  )
     }}
@@ -95,7 +99,16 @@ const Extract = () => {
 
 <div className="mt-12 flex flex-col gap-2">
     <button className='p-3 bg-primary text-white text-xs flex gap-x-2 items-center'><FaFileExport /> {' '} <span>Export Palette</span></button>
-    <button className='p-3 bg-gray-900 text-white text-xs flex gap-x-2 items-center'><FaHeart /> {' '} <span>Save Palette</span></button>
+
+
+    <button onClick={()=>{
+        setStatus(true)
+        save('favourites', {
+       id:uuid(),
+       type:'color',
+       data:colors
+     })
+    }} className={`p-3  text-xs flex gap-x-2 items-center bg-gray-900  transition-colors  ${saved ? "text-red-600" : 'text-white'}`}><FaHeart /> {' '} <span>{saved ? 'Saved': 'Save Palette'}</span></button>
 </div>
     )
 }
