@@ -1,5 +1,6 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { FaCopy, FaFileExport, FaHeart, FaTrash } from 'react-icons/fa'
+import save from '../../Actions/save'
 import randomColor from '../../Utils/color'
 interface ColorCardProps<T=string>{
     name:T,
@@ -55,6 +56,7 @@ export const ColorCard2  = ({color}:{color?:string})=>{
 
 
 export const  ColorPalette = ({colors}:{colors:string[]})=>{
+  const [saved, setStatus] = useState(false)
   return(
     <div className="">
     <div className="">
@@ -67,8 +69,14 @@ export const  ColorPalette = ({colors}:{colors:string[]})=>{
     
     
     <div className="p-3">
-      <span className='text-red-600 p-3 w-[100px] rounded-full bg-gray-800 flex gap-1 cursor-pointer'>
-        <FaHeart /> <span className="text-xs text-white">Save</span>
+      <span onClick={()=>{
+        setStatus(true)
+         save('favourites', {
+        type:'color',
+        data:colors
+      })
+      }} className={` p-3 w-[100px] rounded-full  flex gap-1 transition-colors cursor-pointer ${saved ? " bg-red-600 " : 'text-red-600 bg-gray-800'} ` }>
+        <FaHeart /> <span className="text-xs text-white">Save{saved ? 'd' : ''}</span>
       </span>
     </div>
     </div>
