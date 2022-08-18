@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { FaCopy, FaFileExport, FaHeart, FaTrash } from 'react-icons/fa'
 import randomColor from '../../Utils/color'
 interface ColorCardProps<T=string>{
@@ -37,10 +37,16 @@ const ColorCard = ({name,type,className, color=randomColor(200,100,250)}:ColorCa
 
 
 export const ColorCard2  = ({color}:{color?:string})=>{
+  const text = useRef<HTMLSpanElement>(null)
+  const Copy = ()=>{
+    if(text.current){
+      navigator.clipboard.writeText(text.current.innerText);
+    }
+  }
   return(
-    <div className='_color_card p-2 flex justify-between items-center w-full font-bold text-xs' style={{background:color || 'transparent'}}>
-    <span className='filter-invert-1'>{color && color}</span>
-    <span className='icon transition-all cursor-pointer text-gray-700  inline-block shadow-sm'>
+    <div  onClick={Copy} className='_color_card p-2 flex justify-between items-center cursor-pointer w-full font-bold text-xs' style={{background:color || 'transparent'}}>
+    <span className='filter-invert-1' ref={text}>{color && color}</span>
+    <span className='icon transition-all  text-gray-700  inline-block shadow-sm'>
         <FaCopy />
     </span>
 </div>
