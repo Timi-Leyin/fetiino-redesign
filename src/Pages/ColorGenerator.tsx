@@ -19,7 +19,7 @@ const ColorGenerator = () => {
 
 
     
-<div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-4 mt-8 flex-wrap">
+<div className="grid grid-cols-1 px-[5%] sm:grid-cols-3 lg:grid-cols-6 gap-4 flex-wrap">
 {
   Array.from({length:10}).map((arr, i)=>{
    return <ColorPalette colors={[randomColors(), randomColors(), randomColors(), randomColors(), randomColors()]} />

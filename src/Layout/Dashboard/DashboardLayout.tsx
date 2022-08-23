@@ -2,25 +2,29 @@ import React, { ReactNode } from 'react'
 import Header from './Header'
 import Navigation from './Navigation'
 
-const DashboardLayout = ({children, title,paragraph}:{children:ReactNode, title:string,paragraph?:ReactNode | string}) => {
+const DashboardLayout = ({children, title,paragraph, hide=false}:{children:ReactNode, title:string,paragraph?:ReactNode | string, hide:boolean}) => {
   return (
     <main className=''>
     <Header />
    
   <Navigation />
-
-   <div className=" p-6 px-[5%] h-screen relative">
-<div className="mb-3">
+  {/* px-[5%] */}
+   <div className="h-screen relative">
+    {
+      !hide && (
+        <div className="mt-[7rem] text-center">
   
-<div className="">
+<div className="py-4">
 <h1 className='text-5xl font-[500]'>{title}</h1>
-<p className="text-xs w-[350px]">{paragraph || ''}</p>
+<p className="text-xs max-w-[350px] mx-auto">{paragraph || ''}</p>
 </div>
 
 
 <div className=""></div>
 
 </div>
+      )
+    }
      {children}
     </div>
 

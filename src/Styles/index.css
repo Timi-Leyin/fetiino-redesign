@@ -83,4 +83,8 @@ html {
     @apply text-white;
     /* filter:invert(1); */
   }
+
+  .filter-bg-blur{
+    backdrop-filter:blur(20px)
+  }
 }

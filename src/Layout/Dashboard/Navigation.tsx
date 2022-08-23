@@ -26,7 +26,7 @@ const NavItem =({title,icon,to,active=false}:NavItemProps)=>{
 
 const Navigation = () => {
   return (
-   <aside className=' relative mx-[5%] '>
+   <aside className=' relative translate-y-[6.8rem] mx-[5%] '>
        <ul className='flex  justify-around w-full mx-auto gap-4  overflow-x-auto  items-center'>
         <NavItem to='/explore' title='Explore Palette' active={true} icon={<FaTachometerAlt />} />
         <NavItem to='/explore' title='Color Picker' icon={<FaAirbnb />} />

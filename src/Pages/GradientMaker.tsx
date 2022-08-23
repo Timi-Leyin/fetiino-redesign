@@ -37,7 +37,7 @@ const GradientMaker = () => {
     <Helmet>
       <title>Fetiino - Gradient Maker</title>
     </Helmet>
-   <DashboardLayout title='Gradient Maker' paragraph='Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere iusto.
+   <DashboardLayout title='Gradient Maker' hide={true} paragraph='Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere iusto.
 '>
 
 <div style={{
