@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 import Header from './Header'
 import Navigation from './Navigation'
 
-const DashboardLayout = ({children, title,paragraph, hide=false}:{children:ReactNode, title:string,paragraph?:ReactNode | string, hide:boolean}) => {
+const DashboardLayout = ({children, title,paragraph, hide=false}:{children:ReactNode, title:string,paragraph?:ReactNode | string, hide?:boolean}) => {
   return (
     <main className=''>
     <Header />
